@@ -1,5 +1,6 @@
 import './App.css';
 import Search from './components/search/Search';
+import Weather from './components/weather/Weather';
 
 function App() {
 
@@ -9,6 +10,9 @@ function App() {
   return (
     <div className="App">
       <Search getSearch={getSearch} />
+      <div className='container'>
+      <Weather />
+      </div>
     </div>
   );
 }
