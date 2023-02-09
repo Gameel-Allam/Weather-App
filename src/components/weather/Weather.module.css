@@ -1,11 +1,11 @@
 .card {
-    margin-top: 40px;
-    padding: 20px 25px;
+    padding: 20px 70px 20px 30px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, white, lightblue);
     border-radius: 30px;
-    box-shadow: -5px 0px 30px 0px #aaa;
+    box-shadow: -5px 0px 10px 0px #97b3de;
+    z-index: 10;
 }
 
 .day {
