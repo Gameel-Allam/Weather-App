@@ -1,11 +1,30 @@
 .card {
-    padding: 20px 20px 20px 50px;
+    padding: 20px 20px 20px 40px;
     background-color: #212730;
     color: white;
     border-radius: 20px;
-    width: 50%;
-    margin-left: -30px;
+    width: 60%;
+    margin-left: -20px;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        width: 80%;
+    }
 }
 
 .item {
@@ -19,6 +38,19 @@
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .item {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .item {
+        font-size: 15px;
+    }
+}
+
+
 .item p {
     opacity: .6;
 }
@@ -30,11 +62,14 @@
 }
 
 .day {
-    padding: 10px 10px;
+    padding: 5px;
     border-radius: 10px;
     background-color: #323a46;
     transition: all 0.2s;
     flex-grow: 1;
+    letter-spacing: 0px;
+    margin: .5px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +77,20 @@
     cursor: pointer;
 
 }
+
+@media (max-width: 768px) {
+    .day {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .day:nth-child(6),
+    .day:nth-child(7) {
+        display: none;
+    }
+}
+
+
 
 .day:hover {
     transform: scale(1.25);

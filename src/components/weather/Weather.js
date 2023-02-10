@@ -26,7 +26,7 @@ const Weather = ({ weatherData }) => {
                 <div className={styles.icon}>
                     <img src={`assets/${weatherData?.weather[0]?.icon || "unknown"}.png`} alt="Sunny" />
                 </div>
-                <div className={styles.temperature}>{Math.round(weatherData?.main?.temp) || 0}°C <span>{weatherData?.weather[0]?.main}</span></div>
+                <div className={styles.temperature}>{Math.round(weatherData?.main?.temp) || 0}° C <span>{weatherData?.weather[0]?.main}</span></div>
             </div>
         </div>
     )

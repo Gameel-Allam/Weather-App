@@ -43,7 +43,7 @@ const Forecast = ({ forecastData }) => {
                         <div className={`${styles.day} ${idx === activeId ? styles.active : ""}`} key={idx} onClick={() => handleSelect(idx)}>
                             <img src={`assets/${ele.weather[0].icon}.png`} alt='icon' />
                             <label>{nextWeekDays[idx]}</label>
-                            <p>{ele.main.temp}°C</p>
+                            <p>{ele.main.temp}° C</p>
                         </div>)
                 })}
             </div>

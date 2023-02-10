@@ -1,18 +1,44 @@
 .card {
-    padding: 30px 80px 30px 20px;
+    padding: 30px 60px 30px 20px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, white, lightblue);
     border-radius: 30px;
     box-shadow: -5px 0px 10px 0px #97b3de;
+    width: 20%;
     z-index: 10;
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+    .card {
+        box-shadow: 0px -3px 7px -5px #97b3de;
+        padding: 10px 60px;
+        align-items: center;
+        border-radius: 15px;
+        width: 75%;
+        z-index: unset;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        width: 30%;
+        padding: 20px;
+    }
 }
 
 .day {
     font-weight: 900;
     font-size: 30px;
     letter-spacing: 5px;
+}
 
+@media (max-width: 768px) {
+    .day {
+        text-align: center;
+    }
 }
 
 .day span,
@@ -22,7 +48,7 @@
     margin-bottom: 15px;
     opacity: .5;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .city svg {
@@ -32,15 +58,29 @@
 
 .icon img {
     display: block;
-    margin: 60px -20px -10px;
+    margin: 60px -10px -10px;
     width: 100px;
 }
 
+@media (max-width: 768px) {
+    .icon img {
+        width: 75px;
+        margin: 20px 5px 0px;
+        text-align: center;
+    }
+}
+
 .temperature {
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: -2px;
     font-weight: 900;
     line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .temperature {
+        font-size: 40px;
+    }
 }
 
 .temperature span {
@@ -48,4 +88,11 @@
     opacity: 0.7;
     font-size: 30px;
     display: block;
+}
+
+@media (max-width: 768px) {
+    .temperature span {
+        font-size: 18px;
+        text-align: center;
+    }
 }

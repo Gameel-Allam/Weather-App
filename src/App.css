@@ -1,12 +1,29 @@
 .App {
-  width: 1080px;
+  width: 70%;
   margin: 40px auto;
 }
 
 .container {
-  margin-top: 200px;
+  margin-top: 190px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 90%;
+  }
+
+  .container {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ .App {
+    width: 80%;
+  }
 }
