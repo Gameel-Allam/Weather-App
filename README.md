@@ -1,9 +1,9 @@
 # React Weather App
 
 A simple weather app built on top of openweathermap & GeoDB Cities Apis
-![App screens]<img src='./public/assets/screenShots/mockup.png'/>
+<p align="center"><img width="800" height="600" align="center" src='./public/assets/screenShots/mockup.png'/></p>
 
-## Getting started
+# Getting started
 
 - Sign up over [openweathermap](https://home.openweathermap.org/api_keys) and get an API key.
 - Sign and subscribe up over [openweathermap](https://rapidapi.com/wirefreethought/api/geodb-cities/) to get an API key.
