@@ -16,7 +16,7 @@
         padding: 10px 60px;
         align-items: center;
         border-radius: 15px;
-        width: 75%;
+        width: 70%;
         z-index: unset;
         margin-bottom: 20px;
     }
@@ -71,7 +71,7 @@
 }
 
 .temperature {
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: -2px;
     font-weight: 900;
     line-height: 1;

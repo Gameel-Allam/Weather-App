@@ -8,6 +8,5 @@ export const GEODB_OPTIONS = {
 
 export const GEODB_CITIES = 'https://wft-geo-db.p.rapidapi.com/v1/geo/adminDivisions';
 
-export const OPEN_WEATHER_KEY = `e6bf02b9479401d6d68984f96a27fb77
-`;
+export const OPEN_WEATHER_KEY = `e6bf02b9479401d6d68984f96a27fb77`;
 export const OPEN_WEATHER_URL = `https://api.openweathermap.org/data/2.5`;
